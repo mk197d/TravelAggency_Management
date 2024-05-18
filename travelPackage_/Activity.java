@@ -4,19 +4,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The Activity class represents an activity that can be booked by passengers.
- * Each activity has a unique code, name, description, destination, cost, capacity, current bookings,
- * and a list of enrolled passengers.
+     ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════╗     
+     ║  The Activity class represents an activity that can be booked by passengers.                                  ║     
+     ║  Each activity has a unique code, name, description, destination, cost, capacity, current bookings,           ║     
+     ║  and a list of enrolled passengers.                                                                           ║     
+     ╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════╝   
+     ╔═════════════════════════════════════════════╗ ╔═══════════════════════════════════════════════╗     
+     ║                Activity Class               ║ ║                  Description                  ║     
+     ║─────────────────────────────────────────────║ ║───────────────────────────────────────────────║     
+     ║+ field: int act_code                        ║ ║  The unique code of the activity.             ║     
+     ║+ field: String act_name                     ║ ║  The name of the activity.                    ║     
+     ║+ field: String act_description              ║ ║  The description of the activity.             ║     
+     ║+ field: String act_destination              ║ ║  The destination of the activity.             ║     
+     ║+ field: double Cost                         ║ ║  The cost of the activity.                    ║     
+     ║+ field: int capacity                        ║ ║  The maximum capacity of participants         ║     
+     ║+ field: int bookings                        ║ ║  The number of bookings made                  ║     
+     ║+ field: List Passenger  enrolled_passengers ║ ║  The list of passengers enrolled              ║     
+     ╚═════════════════════════════════════════════╝ ╚═══════════════════════════════════════════════╝   
  */
 public class Activity {
-    private int act_code; // The unique code of the activity.
-    private String act_name; // The name of the activity.
-    private String act_description; // The description of the activity.
-    private String act_destination; // The destination of the activity.
-    private double Cost; // The cost of the activity.
-    private int capacity; // The maximum capacity of participants for the activity.
-    private int bookings; // The number of bookings made for the activity.
-    private List<Passenger> enrolled_passengers; // The list of passengers enrolled in the activity.
+    private int act_code; 
+    private String act_name; 
+    private String act_description; 
+    private String act_destination; 
+    private double Cost; 
+    private int capacity;
+    private int bookings; 
+    private List<Passenger> enrolled_passengers; 
 
     /**
      * Constructs an Activity object with default values.
